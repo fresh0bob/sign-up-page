@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+	<style>
+		body {
+			background: url(https://source.unsplash.com/random/1920x1080) no-repeat center center fixed;
+			background-size: cover;
+			background-color: rgba(0, 0, 0, 0.8);
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.overlay {
+			background-color: rgba(255, 255, 255, 0.5);
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+		h1 {
+			color: #fff;
+			font-family: 'Pacifico', cursive;
+			font-size: 3rem;
+			margin-top: 50px;
+			text-align: center;
+			text-shadow: 0 0 10px #fff;
+			z-index: 1;
+		}
+		form {
+			background-color: #fff;
+			backdrop-filter: blur(10px);
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			margin: 50px auto;
+			max-width: 400px;
+			padding: 30px;
+			position: relative;
+			width: 90%;
+			z-index: 1;
+		}
+		label {
+			display: block;
+			font-size: 1.2rem;
+			font-family: 'Pacifico', cursive;
+			margin-bottom: 5px;
+		}
+		input[type="text"], input[type="email"], input[type="password"] {
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			font-size: 1.2rem;
+			font-family: 'Pacifico', cursive;
+			margin-bottom: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+		input[type="submit"] {
+			background-color: #333;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1.2rem;
+			padding: 10px;
+			transition: background-color 0.3s ease;
+			width: 100%;
+		}
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+		h2, h3 {
+			font-family: 'Pacifico', cursive;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<script>
+		function redirectToYouTube() {
+			window.location.href = "https://youtu.be/xvFZjo5PgG0";
+		}
+	</script>
+</head>
+<body>
+	<div class="overlay"></div>
+	<h1>Sign Up</h1>
+	<form onsubmit="redirectToYouTube(); return false;">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		
+        <input type="password" id="password" name="password" required>
+
+		<input type="submit" value="Sign Up">
+	</form>
+</body>
+</html>
